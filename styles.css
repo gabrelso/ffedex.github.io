@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    background-color: #87CEEB; /* Sky blue */
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.text {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 48px;
+    color: white;
+}
+
+#pool {
+    background-image: url('https://example.com/path_to_your_pool_image.jpg'); /* Replace with your pool image URL */
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+}
+
+#balloons {
+    position: absolute;
+    bottom: 0;
+}
