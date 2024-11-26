@@ -618,7 +618,7 @@ Logo.BackgroundTransparency = 1
 Logo.BorderSizePixel = 0
 Logo.Position = UDim2.new(0, 125, 0, 127)
 Logo.Size = UDim2.new(0, 10, 0, 10)
-Logo.Image = "rbxassetid://18872504686"
+Logo.Image = "rbxassetid://137255448457995"
 Logo.ImageTransparency = 0
 Logo.ZIndex = 10
 
@@ -2849,10 +2849,10 @@ local loadedEventData = nil
 local jsonAttempts = 0
 function saves()
 	if writefileExploit() and jsonAttempts < 50 then
-		if pcall(function() readfile("IY_FE.iy") end) then
-			if readfile("IY_FE.iy") ~= nil then
+		if pcall(function() readfile("TrueYield.tiy") end) then
+			if readfile("TrueYield.tiy") ~= nil then
 				local success, response = pcall(function()
-					local json = HttpService:JSONDecode(readfile("IY_FE.iy"))
+					local json = HttpService:JSONDecode(readfile("TrueYield.tiy"))
 					if json.prefix ~= nil then prefix = json.prefix else prefix = ';' end
 					if json.StayOpen ~= nil then StayOpen = json.StayOpen else StayOpen = false end
 					if json.keepIY ~= nil then KeepInfYield = json.keepIY else KeepInfYield = true end
@@ -2876,19 +2876,19 @@ function saves()
 					jsonAttempts = jsonAttempts + 1
 					warn("Save Json Error:", response)
 					warn("Overwriting Save File")
-					writefileCooldown("IY_FE.iy", defaults)
+					writefileCooldown("TrueYield.tiy", defaults)
 					task.wait()
 					saves()
 				end
 			else
-				writefileCooldown("IY_FE.iy", defaults)
+				writefileCooldown("TrueYield.tiy", defaults)
 				task.wait()
 				saves()
 			end
 		else
-			writefileCooldown("IY_FE.iy", defaults)
+			writefileCooldown("TrueYield.tiy", defaults)
 			task.wait()
-			if pcall(function() readfile("IY_FE.iy") end) then
+			if pcall(function() readfile("TrueYield.tiy") end) then
 				saves()
 			else
 				nosaves = true
@@ -3084,7 +3084,7 @@ function updatesaves()
 			currentScroll = {currentScroll.R,currentScroll.G,currentScroll.B};
 			eventBinds = eventEditor.SaveData()
 		}
-		writefileCooldown("IY_FE.iy", HttpService:JSONEncode(update))
+		writefileCooldown("TrueYield.tiy", HttpService:JSONEncode(update))
 	end
 end
 
@@ -6262,17 +6262,17 @@ end)
 PluginsGUI = PluginEditor.background
 
 function addPlugin(name)
-	if name:lower() == 'plugin file name' or name:lower() == 'iy_fe.iy' or name == 'iy_fe' then
+	if name:lower() == 'plugin file name' or name:lower() == 'TrueYield.tiy' or name == 'TrueYield' then
 		notify('Plugin Error','Please enter a valid plugin')
 	else
 		local file
 		local fileName
-		if name:sub(-3) == '.iy' then
+		if name:sub(-3) == '.tiy' then
 			pcall(function() file = readfile(name) end)
 			fileName = name
 		else
-			pcall(function() file = readfile(name..'.iy') end)
-			fileName = name..'.iy'
+			pcall(function() file = readfile(name..'.tiy') end)
+			fileName = name..'.tiy'
 		end
 		if file then
 			if not FindInTable(PluginsTable, fileName) then
@@ -6290,8 +6290,8 @@ function addPlugin(name)
 end
 
 function deletePlugin(name)
-	local pName = name..'.iy'
-	if name:sub(-3) == '.iy' then
+	local pName = name..'.tiy'
+	if name:sub(-3) == '.tiy' then
 		pName = name
 	end
 	for i = #cmds,1,-1 do
