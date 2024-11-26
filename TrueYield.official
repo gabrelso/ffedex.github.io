@@ -1,8 +1,6 @@
 if IY_LOADED and not _G.IY_DEBUG == true then
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/ffedex/0.1x/refs/heads/main/alreadyexecuted.idk%3F'))() --[[
-	from iyr.lol
-	.wyvern file bc why not
-	]]
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/ffedex/ffedex.github.io/refs/heads/main/TrueYield.AlreadyExecuted'))()
+-- .AlreadyExecuted file because why not?
 	return
 end
 
@@ -13629,7 +13627,7 @@ addcmd('translator',{'chattranslate'},function(args, speaker)
 end)
 
 addcmd('ssppy',{},function(args, speaker)
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/ffedex/0.1x/refs/heads/main/simplespy.imbored"))("SimpleSpy")
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/ffedex/ffedex.github.io/refs/heads/main/SimpleSpy.TrueYield"))("SimpleSpy")
 end)
 
 -- Command to create a rainbow effect on both Holder and Dark UI elements
