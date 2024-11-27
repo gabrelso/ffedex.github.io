@@ -1,0 +1,13 @@
+/* styles.css */
+@font-face {
+  font-family: '3DBalloons';
+  src: url('fonts/3dballoons.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1 {
+  font-family: '3DBalloons', sans-serif;
+  font-size: 3em;
+  color: #f00;
+}
