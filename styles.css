@@ -1,13 +1,21 @@
-/* styles.css */
 @font-face {
-  font-family: '3DBalloons';
-  src: url('fonts/3dballoons.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+    font-family: '3D Balloons';
+    src: url('fonts/3dballoons.ttf') format('truetype');
 }
 
-h1 {
-  font-family: '3DBalloons', sans-serif;
-  font-size: 3em;
-  color: #f00;
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwzKsFZmRstKowZlS49znKxw-fy62jRMnQwg&s');
+    background-size: cover;
+    background-position: center;
+}
+
+.centered-text {
+    font-family: '3D Balloons', sans-serif;
+    font-size: 48px;
+    color: white;
 }
