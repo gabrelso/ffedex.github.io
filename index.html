@@ -4,15 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Wsp</title>
+    <title>Centered Text with Background</title>
     <script>
         // JavaScript function to redirect on click
         function redirectToUrl() {
             window.location.href = "https://ffedex.github.io/hi.html";
         }
+        
+        // Ensure the function is called after the DOM is fully loaded
+        document.addEventListener("DOMContentLoaded", function() {
+            document.body.addEventListener("click", redirectToUrl);
+        });
     </script>
 </head>
-<body onclick="redirectToUrl()">
+<body>
     <div class="centered-text">Fede!</div>
 </body>
 </html>
