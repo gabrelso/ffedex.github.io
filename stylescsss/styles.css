@@ -7,17 +7,17 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default margin */
     background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwzKsFZmRstKowZlS49znKxw-fy62jRMnQwg&s');
-    background-size: cover;
-    background-position: center;
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background image */
 }
 
 .centered-text {
-    font-family: '3D Balloons', sans-serif;
-    font-size: 48px;
-    color: white;
+    font-family: '3D Balloons', sans-serif; /* Fallback to sans-serif */
+    font-size: 48px; /* Adjust size as needed */
+    color: white; /* Change color for better visibility */
 }
 
 .invisible-button {
