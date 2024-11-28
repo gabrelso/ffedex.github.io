@@ -2,9 +2,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwzKsFZmRstKowZlS49znKxw-fy62jRMnQwg&s');
+    height: 100vh; 
+    margin: 0; 
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwzKsFZmRstKowZlS49znKxw-fy62jRMnQwg&s'); /* Example background */
     background-size: cover;
     background-position: center;
 }
@@ -14,3 +14,11 @@ body {
     font-size: 48px;
     color: white;
 }
+
+.invisible-button {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    background-color: transparent; 
