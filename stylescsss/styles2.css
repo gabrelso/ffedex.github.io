@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('https://t4.ftcdn.net/jpg/08/03/03/03/360_F_803030310_pc6jM9cLb97XQX1JeIo2c8AKIgFFat9u.jpg'); 
+    background-size: cover;
+    background-position: center;
+}
+
+button {
+    padding: 10px 20px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    border: none; 
+    border-radius: 5px; 
+    background-color: rgba(0, 123, 255, 0.8); 
+    color: white; 
+    margin: 10px; 
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: rgba(0, 86, 179, 0.8);
+}
