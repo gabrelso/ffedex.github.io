@@ -1,6 +1,3 @@
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "Chat Bypasser", HidePremium = false, IntroText = "Chat Bypasser", SaveConfig = false})
-
 -- ANTHONY'S ACL
 loadstring(game:HttpGet("https://raw.githubusercontent.com/AnthonyIsntHere/anthonysrepository/main/scripts/AntiChatLogger.lua", true))()
 --KNIFEBYPASSER'S ACL
@@ -8,7 +5,20 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/MasterBypasser/KnifeB
 -- RANDOM ASS ACL
 loadstring(game:HttpGet('https://raw.githubusercontent.com/vqmpjayZ/More-Scripts/main/Anti-Chat-Logger'))()
 
-print("made by Fede")
+print("made by fede")
+
+function createNotification(title, text, duration)
+    local StarterGui = game:GetService("StarterGui")
+    StarterGui:SetCore("SendNotification", {
+        Title = title,
+        Text = text,
+        Duration = duration
+    })
+end
+createNotification("Welcome!", "Made by Fede", 5)
+
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "Chat Bypasser", HidePremium = false, IntroText = "Chat Bypasser", SaveConfig = false})
 
 function chat(msg)
 
@@ -922,17 +932,6 @@ botTab:AddToggle({
         end
     end
 })
-
-local someTab = Window:MakeTab({
-    Name = "Chatbot",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-
-
-someTab:AddParagraph("Credits:","discord: swqss, roblox: thatonestandexx")
-someTab:AddParagraph("Roblox Alts:","harderwv, dahoodmylifeZ, TheJapaneseFilms")
-someTab:AddParagraph("Discord Alt:","swqssalt")
 
 OrionLib:Init()
 
