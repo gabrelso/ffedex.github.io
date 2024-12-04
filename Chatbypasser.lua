@@ -7,7 +7,7 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/vqmpjayZ/More-Scripts
 
 print("made by fede")
 
-function createNotification(title, text, duration)
+function MEOWMEOWMEOWMEOWBITCH(title, text, duration)
     local StarterGui = game:GetService("StarterGui")
     StarterGui:SetCore("SendNotification", {
         Title = title,
@@ -15,7 +15,7 @@ function createNotification(title, text, duration)
         Duration = duration
     })
 end
-createNotification("Welcome!", "Made by Fede", 5)
+MEOWMEOWMEOWMEOWBITCH("Welcome!", "Made by Fede", 5)
 
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "Chat Bypasser", HidePremium = false, IntroText = "Chat Bypasser", SaveConfig = false})
