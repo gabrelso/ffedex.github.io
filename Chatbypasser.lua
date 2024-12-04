@@ -923,15 +923,16 @@ botTab:AddToggle({
     end
 })
 
-local randomttab = Window:MakeTab({
-	Name = "Credits",
+local someTab = Window:MakeTab({
+    Name = "Chatbot",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
 
-randomttab:AddParagraph("Credits:","discord: swqss, roblox: thatonestandexx")
-randomttab:AddParagraph("Roblox Alts:","harderwv, dahoodmylifeZ, TheJapaneseFilms")
-randomttab:AddParagraph("Discord Alt:","swqssalt")
+
+someTab:AddParagraph("Credits:","discord: swqss, roblox: thatonestandexx")
+someTab:AddParagraph("Roblox Alts:","harderwv, dahoodmylifeZ, TheJapaneseFilms")
+someTab:AddParagraph("Discord Alt:","swqssalt")
 
 OrionLib:Init()
 
