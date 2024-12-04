@@ -1,24 +1,7 @@
--- ANTHONY'S ACL
-loadstring(game:HttpGet("https://raw.githubusercontent.com/AnthonyIsntHere/anthonysrepository/main/scripts/AntiChatLogger.lua", true))()
---KNIFEBYPASSER'S ACL
-loadstring(game:HttpGet("https://raw.githubusercontent.com/MasterBypasser/KnifeBypasser/refs/heads/main/AntiChatLogger.lua", true))()
--- RANDOM ASS ACL
-loadstring(game:HttpGet('https://raw.githubusercontent.com/vqmpjayZ/More-Scripts/main/Anti-Chat-Logger'))()
-
-print("made by fede")
-
-function MEOWMEOWMEOWMEOWBITCH(title, text, duration)
-    local StarterGui = game:GetService("StarterGui")
-    StarterGui:SetCore("SendNotification", {
-        Title = title,
-        Text = text,
-        Duration = duration
-    })
-end
-MEOWMEOWMEOWMEOWBITCH("Welcome!", "Made by Fede", 5)
-
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "Chat Bypasser", HidePremium = false, IntroText = "Chat Bypasser", SaveConfig = false})
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AnthonyIsntHere/anthonysrepository/main/scripts/AntiChatLogger.lua", true))() -- ACL
 
 function chat(msg)
 
