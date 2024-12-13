@@ -12317,17 +12317,17 @@ addcmd('togglefling',{},function(args, speaker)
 end)
 
 addcmd("flyfling", {}, function(args, speaker)
-	execCmd("unvehiclefly\\unfling\\unnoclip")
-	task.wait()
-	execCmd("vehiclefly\\fling\\noclip")
+    execCmd("unvehiclefly\\unwalkfling")
+    wait()
+    execCmd("vehiclefly\\walkfling")
 end)
 
 addcmd("unflyfling", {}, function(args, speaker)
-	execCmd("unvehiclefly\\unfling\\unnoclip\\breakvelocity")
+    execCmd("unvehiclefly\\unwalkfling\\breakvelocity")
 end)
 
 addcmd("toggleflyfling", {}, function(args, speaker)
-	execCmd(flinging and "unflyfling" or "flyfling")
+    execCmd(flinging and "unflyfling" or "flyfling")
 end)
 
 walkflinging = false
