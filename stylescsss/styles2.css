@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    flex-direction: column; /* Disposizione verticale */
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Altezza completa della viewport */
+    margin: 0; /* Rimuove il margine di default */
+    background-image: url('https://t4.ftcdn.net/jpg/08/03/03/03/360_F_803030310_pc6jM9cLb97XQX1JeIo2c8AKIgFFat9u.jpg'); /* Immagine di sfondo */
+    background-size: cover; /* Copre l'intera area */
+    background-position: center; /* Centra l'immagine */
+}
+
+button {
+    padding: 10px 20px; /* Padding del bottone */
+    font-size: 16px; /* Dimensione del font */
+    cursor: pointer; /* Cursore a forma di mano al passaggio del mouse */
+    border: none; /* Rimuove il bordo di default */
+    border-radius: 5px; /* Angoli arrotondati */
+    background-color: rgba(0, 123, 255, 0.8); /* Colore di sfondo del bottone con trasparenza */
+    color: white; /* Colore del testo */
+    margin: 10px; /* Margine tra i bottoni */
+    transition: background-color 0.3s; /* Transizione per il colore di sfondo */
+}
+
+button:hover {
+    background-color: rgba(0, 86, 179, 0.8); /* Colore di sfondo al passaggio del mouse con trasparenza */
+}
