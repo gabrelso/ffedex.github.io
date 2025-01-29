@@ -2784,7 +2784,7 @@ reference = (function()
 	local lastPress = nil
 	inviteButton.MouseButton1Click:Connect(function()
 		if everyClipboard then
-			toClipboard("https://discord.gg/bfYJcEwjt2")
+			toClipboard("nolink")
 			inviteButton.Text = "Copied"
 		else
 			inviteButton.Text = "No Clipboard Function, type out the link"
@@ -2793,7 +2793,7 @@ reference = (function()
 		lastPress = pressTime
 		task.wait(2)
 		if lastPress ~= pressTime then return end
-		inviteButton.Text = "Copy Discord Invite Link (https://discord.gg/bfYJcEwjt2)"
+		inviteButton.Text = "Copy Discord Invite Link (nolink)"
 	end)
 	dragGUI(main)
 	main.Parent = PARENT
@@ -4445,10 +4445,9 @@ spawn(function()
 end)
 
 CMDs = {}
-CMDs[#CMDs + 1] = {NAME = 'discord / dc', DESC = 'Invite to the Discord server.'}
 CMDs[#CMDs + 1] = {NAME = 'console', DESC = 'Loads old Roblox console'}
 CMDs[#CMDs + 1] = {NAME = 'unc / unctest / unccheckevn', DESC = 'Tests all UNC Environment'}
-CMDs[#CMDs + 1] = {NAME = 'sunc / sunctest', DESC = 'Tests UNC'}
+CMDs[#CMDs + 1] = {NAME = 'sunc / sunctest', DESC = 'Tests sUNC'}
 CMDs[#CMDs + 1] = {NAME = 'addunc / addmoreunc / adduncevn', DESC = 'Adds some UNC Environment(s)'}
 CMDs[#CMDs + 1] = {NAME = 'explorer / dex', DESC = 'Opens DEX by Moon'}
 CMDs[#CMDs + 1] = {NAME = 'secureexplorer / securedex / bypasseddex', DESC = 'Opens Bypassed DEX by HamstaGang'}
